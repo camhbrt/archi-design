@@ -11,16 +11,16 @@ const Navbar = () => {
                 ]
 
     return (
-        <div className='flex p-2 m-2'>
-            {menu.map((page) =>(
-                <NavLink to={page.path} className="flex-auto">
-                    <button className='hover:outline hover:outline-2 p-1 hover:outline-black hover:bg-yellow-400'>
+        <div className='flex justify-evenly m-2'>
+            {menu.map((page) => (
+                <button className='hover:outline hover:outline-2 hover:outline-black hover:bg-yellow-400 py-1 px-2'>
+                    <NavLink to={page.path} className="">
                         {page.title}
-                    </button> 
-                </NavLink>
+                    </NavLink>
+                </button>
             ))}
-            
-        </div>
+</div>
+
     );
 };
 

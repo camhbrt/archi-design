@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className='w-full relative'>
       <img src="./public/maquette1.png" alt="hero image" srcSet=""
-        className={isButtonHovered ? 'filter blur-sm' : ''}
+        className={isButtonHovered ? 'filter blur-sm ease-in duration-150' : ''}
       />
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
         onMouseEnter={() => setIsButtonHovered(true)}

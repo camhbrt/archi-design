@@ -1,13 +1,11 @@
 import React from 'react';
-import PageTitle from '../components/PageTitle';
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const Contactspage = () => {
     return (
         <div className='flex flex-col min-h-screen'>
-            <PageTitle page="> Contacts"/>
-            <Navbar/>
+            <Header page="> Contacts"/>
             <Footer/>
         </div>
     );

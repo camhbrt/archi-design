@@ -1,15 +1,15 @@
 import React from 'react';
-import PageTitle from '../components/PageTitle';
-import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProjectMenu from '../components/ProjectMenu';
+import ProjectDiv from '../components/ProjectDiv';
+import Header from '../components/Header';
 
 const Projectspage = () => {
     return (
         <div className='flex flex-col min-h-screen'>
-            <PageTitle page="> Projets"/>
-            <Navbar/>
+            <Header page="> Projets"/>
             <ProjectMenu/>
+            <ProjectDiv/>
             <Footer/>
         </div>
     );

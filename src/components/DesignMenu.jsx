@@ -1,21 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Button from './Button';
 import DropdownMenu from './DropdownMenu';
+import data from '../data';
 
 const DesignMenu = () => {
-    const design=["Eri", "Le Sillage", "Canapé pop"]
+
+    // Usestate pour afficher le menu déroulant
+    const [displayMenu, setDisplayMenu] = useState(false);
+    const handleClick = () => {
+        setDisplayMenu(!displayMenu)
+    }
+    
+    // Récupérer les données de data.jsx
+    const architecture=data();
+    // Filtrer les objets avec les IDs inférieurs à 3 et récuperer leurs noms
+    const filteredProjects = architecture.filter((project) => (project.id >3)).map((project) => project.name);
+
+
     return (
-        <div className='relative basis-1/2'>
+        <div className='flex'>
+        <div className=''>
+            <Button text="design >" onClick={handleClick}/>
+        </div>
+        {displayMenu && (
             <div className=''>
-                <img src="eri3.jpg" alt="" className='w-full' />
+            <DropdownMenu menu={filteredProjects}/>
             </div>
-            <div className='absolute top-1/2 left-1/4'>
-                <Button text="design >"/>
-            </div>
-            <div>
-            <DropdownMenu menu={design}/>
-        </div>
-        </div>
+        )}
+    </div>
     );
 };
 

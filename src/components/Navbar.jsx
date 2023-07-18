@@ -11,7 +11,7 @@ const Navbar = () => {
                 ]
 
     return (
-        <div className='flex justify-evenly p-2 top-10 '>
+        <div className='flex justify-evenly pt-2 '>
             {menu.map((page) => (
                 <button className='hover:outline hover:outline-2 hover:outline-black hover:bg-yellow-400 py-1 px-2' key={page.title}>
                     <NavLink to={page.path} className="">

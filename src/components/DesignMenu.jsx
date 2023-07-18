@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Button from './Button';
 import DropdownMenu from './DropdownMenu';
-import data from '../data';
+import projects from '../data';
 
 const DesignMenu = () => {
 
@@ -12,9 +12,9 @@ const DesignMenu = () => {
     }
     
     // Récupérer les données de data.jsx
-    const architecture=data();
+    const design=projects();
     // Filtrer les objets avec les IDs inférieurs à 3 et récuperer leurs noms
-    const filteredProjects = architecture.filter((project) => (project.id >3)).map((project) => project.name);
+    const filteredProjects = design.filter((project) => (project.id >3)).map((project) => project.name);
 
 
     return (

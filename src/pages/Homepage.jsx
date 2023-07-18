@@ -8,7 +8,9 @@ const Homepage = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <Header page=""/>
+            <div className='mt-10'>
             <Hero/>
+            </div>
             <HomeSlider/>
             <Footer/>
         </div>

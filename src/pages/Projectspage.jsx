@@ -3,9 +3,10 @@ import Footer from '../components/Footer';
 import ProjectMenu from '../components/ProjectMenu';
 import ProjectDiv from '../components/ProjectDiv';
 import Header from '../components/Header';
-import Slider from './Slider';
 
 const Projectspage = () => {
+
+    const slides1 = ["img/1A.jpg","img/1B.jpg","img/1C.jpg","img/1D.png","img/1E.png","img/1F.png","img/1G.png",]
 
     return (
         <div className='flex flex-col min-h-screen'>
@@ -14,8 +15,6 @@ const Projectspage = () => {
                 <ProjectMenu/>
             </div>
             <ProjectDiv/>
-            {/* <Slider/> */}
-
             <Footer/>
         </div>
     );

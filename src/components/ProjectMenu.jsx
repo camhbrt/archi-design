@@ -7,7 +7,7 @@ const ProjectMenu = () => {
         <div>
             <div className='flex '>
                 <div className='basis-1/2'><ArchitectureSide/></div>
-                <div className='basis-1/2'><DesignSide/></div>
+                <div className='basis-1/2 '><DesignSide/></div>
             </div>
         </div>
     );

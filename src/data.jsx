@@ -1,6 +1,5 @@
 const data = () => {
 
-  const projet2 = ["/img/2a.jpeg", "/img/2b.jpeg","/img/2c.jpeg","/img/2d.png","/img/2e.png","/img/2f.png","/img/2g.png","/img/2h.jpg","/img/2i.png","/img/2j.png","/img/2k.jpg","/img/2l.jpg","/img/2m.png","/img/2n.jpeg","/img/2o.jpg","/img/2p.png"]
   return  [
         { id:1, 
           name:"Le Pari(s) du réemploi", 

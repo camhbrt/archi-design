@@ -1,14 +1,35 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import Slider from './Slider';
+import Button from '../components/Button';
 
 const Contactspage = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <Header page="> Contacts"/>
-            <Slider/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, similique. Expedita voluptatibus, et quod accusantium maiores ratione eius velit, ipsam sed itaque doloremque excepturi officia repellendus aut consequatur tempora recusandae, explicabo repudiandae? Eveniet explicabo nesciunt doloribus suscipit, quasi rerum facere nobis quod minima hic magnam, assumenda consequuntur. Excepturi magni id accusantium quisquam molestiae, atque, tempora aliquid impedit cumque, nostrum saepe nisi dicta! Qui sit hic aperiam consectetur eaque recusandae, ea dolor sint rem odit corporis at totam omnis voluptates? Magni rem at accusantium ipsum quae fuga labore enim atque pariatur, itaque dolor suscipit aperiam architecto facilis omnis quaerat nisi harum molestiae, dolore excepturi quasi accusamus fugit. Quidem nam perspiciatis accusantium placeat autem consequuntur modi quaerat minima magni natus, at rem neque illo quos enim omnis pariatur tempora error, laboriosam aspernatur inventore. Culpa cupiditate adipisci ex? Fugiat ex esse corrupti labore mollitia, suscipit beatae sapiente animi fuga, nobis incidunt, quos nesciunt nisi laboriosam sint necessitatibus consequuntur voluptas eaque qui. Nostrum, similique dolorem corrupti sequi provident quia mollitia laborum rem non! Distinctio deleniti ipsam pariatur assumenda perferendis nam porro necessitatibus unde asperiores veniam dolores commodi, cupiditate delectus nulla sit est omnis voluptates temporibus deserunt, eum iste. Eveniet deserunt animi ducimus suscipit fuga modi amet sequi est maiores pariatur atque reprehenderit voluptate sunt id expedita distinctio neque, nobis aperiam doloribus repellendus laudantium odit libero sapiente! Ab sequi praesentium nam dolore perferendis totam minus sapiente explicabo! Perferendis consequuntur ullam magni soluta, nam quisquam illum a delectus, sint tempora numquam neque veritatis molestiae adipisci explicabo praesentium. Quasi modi suscipit praesentium, ipsam itaque dicta magni deleniti amet est unde voluptatum officia consequatur quae delectus aliquam adipisci quas, quisquam iure earum magnam minima sunt deserunt explicabo? Dolor veritatis amet facilis distinctio! Aspernatur vitae placeat fugiat libero aliquam! Nemo eius mollitia expedita nobis earum officia natus quae quia perferendis magnam, culpa quod, saepe nulla, quidem a. Nulla id deleniti tempore praesentium facere distinctio nihil consectetur. Voluptas, aut repellendus? Mollitia, vitae! Veniam vitae odit sed, nulla explicabo temporibus repudiandae eaque maiores quaerat fugiat autem quos? Neque cumque aliquam nulla at fuga consequatur quis molestiae, doloribus labore! Recusandae impedit obcaecati qui odit commodi repellendus sequi praesentium iusto aliquid, minima cum error quaerat provident veritatis suscipit blanditiis accusantium accusamus animi maxime amet voluptate. Amet hic error assumenda temporibus, dolorum, in aperiam autem ea unde, quod dignissimos. Perferendis, neque impedit at culpa ipsam itaque libero nam in recusandae et obcaecati. Cupiditate deserunt voluptatum nemo id, sit aliquid. Magni sapiente aliquam eius, nobis non voluptates. Soluta, ex repudiandae laboriosam enim ipsa quaerat dicta nam mollitia natus, rem aperiam nihil vero esse pariatur tempore quisquam temporibus a quasi neque magnam inventore ipsam rerum similique! Adipisci quis accusantium hic illum dolor? Non quasi nesciunt culpa error modi veniam hic, eum ipsam consequuntur recusandae vitae quam natus? Harum minus, placeat laborum temporibus aut fuga earum corrupti ipsum aliquid mollitia quis quisquam non magnam aspernatur? Placeat culpa, quibusdam saepe delectus alias tenetur veritatis quam et in dolores libero quaerat consectetur, temporibus ullam autem accusamus recusandae ad? Et!.</p>
+            <div className='relative'>
+                <img src="./public/maquette1.png" alt="" />
+
+                <div className='flex items-center justify-center absolute top-0 left-0 w-full h-full'>
+                    <form id="contact-form" onSubmit="" method="POST" className='bg-white  bg-opacity-50 backdrop-blur-sm w-1/2 h-1/2 p-5'> 
+                        <div className="p-1">
+                            <label htmlFor="name" >Votre nom :</label>
+                            <input type="text" className="bg-white border border-black rounded-md m-2" />
+                        </div>
+                        <div className="p-1">
+                            <label htmlFor="exampleInputEmail1">Votre e-mail :</label>
+                            <input type="email" className="bg-white border border-black rounded-md  m-2" aria-describedby="emailHelp" />
+                        </div>
+                        <div className="p-1">
+                            <label htmlFor="message">Un petit message ?</label><br/ >
+                            <textarea className="bg-white border border-black rounded-md w-full  max-h-[50vh] "  ></textarea>
+                        </div>
+                        <button type="submit" className="bg-white px-2 py-1  hover:bg-yellow-400">Submit</button>
+                    </form>
+                                            
+                    
+                </div>
+            </div>
             <Footer/>
         </div>
     );
